@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System;
+
 
 namespace Aula0304
 {
@@ -12,7 +12,10 @@ namespace Aula0304
         public double largura { get; set; }
         public double altura { get; set; }
 
-        public double Area()
+
+        /*Passei as variáveis por parametro, pra ele funcionar eu preciso de dois 
+         * valores double*/
+        public double Area(double altura, double largura)
         {
             double Area = altura * largura;
             return Area;

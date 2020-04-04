@@ -19,7 +19,9 @@ namespace Aula0304
 
         private void btnCalcular_Click(object sender, EventArgs e)
         {
-            /*int altura, largura, area;
+            // você estava indo no caminho certo :-)
+
+            /*int altura, largura, area; // so´não era int, e sim double
 
             altura = Int32.Parse(txtAltura.Text);
             largura = Int32.Parse(txtLargura.Text);
@@ -32,13 +34,23 @@ namespace Aula0304
 
             Retangulo c = new Retangulo();
 
-            string a = Convert.ToString(c.Area());
-            string d = Convert.ToString(c.Diagonal());
-            string p = Convert.ToString(c.Perimetro());
+            /*declarando as entradas*/
+            double altura,largura;
+            /*pegando os valores digitados*/
+            altura = Convert.ToDouble(txtAltura.Text);
+            largura = Convert.ToDouble(txtLargura.Text);
 
+            
+            /*convertendo para string*/
+            string a = Convert.ToString(c.Area(altura, largura));
+
+            //string d = Convert.ToString(c.Diagonal());
+            //string p = Convert.ToString(c.Perimetro());
+
+            /*mostrando no formulário*/
             txtArea.Text = a;
-            txtDiagonal.Text = d;
-            txtPerimetro.Text = p;
+            //txtDiagonal.Text = d;
+            //txtPerimetro.Text = p;
         }
         public void PegarDados()
         {
